@@ -21,8 +21,9 @@ public class Controller {
     @FXML
     public Label savings;
 
-    public void checkingBal(ActionEvent); {
+    public void checkingBal(ActionEvent) {
         BankAccount.setNodeValue(checkingBal(double)
     }
 }
 
+// How the everything is supposed to function in the Controler goes here?

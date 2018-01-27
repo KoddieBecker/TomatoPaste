@@ -21,3 +21,4 @@ public class Main extends Application {
         launch(args);
     }
 }
+//In my notes, I have my variables gp in main. Do they go here or in BankAccount?
