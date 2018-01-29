@@ -12,13 +12,19 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Bank Account");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setScene(new Scene(root, 750, 500));
         primaryStage.show();
     }
 
 
     public static void main(String[] args) {
-        launch(args);
+
+        BankAccount savings = new BankAccount();
+        savings.deposit(500);
+
+        BankAccount checking =
+
+
     }
 }
 //In my notes, I have my variables gp in main. Do they go here or in BankAccount?

@@ -1,5 +1,7 @@
 package sample;
 
+Scanner sc = new Scanner;
+
 public class BankAccount {
 
     private double balance;
@@ -7,7 +9,6 @@ public class BankAccount {
     public BankAccount() {
         balance = 0.0;
     }
-
 
     public void deposit(double amount) {
         balance = balance + amount;
@@ -22,4 +23,4 @@ public class BankAccount {
     }
 }
 // else/if loop goes here?
-// all of the functions of my checking and savings go here?
+// all of the functions of my checking and savings go here?v
