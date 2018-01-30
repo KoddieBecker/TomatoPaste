@@ -1,26 +1,29 @@
 package sample;
 
-Scanner sc = new Scanner;
 
 public class BankAccount {
 
-    private double balance;
+    public double balance;
 
-    public BankAccount() {
-        balance = 0.0;
+    public BankAccount(double balancebA) {
+        this.balance = balancebA;
+        System.out.println("Bank Account Balance $" + balancebA);
     }
 
-    public void deposit(double amount) {
-        balance = balance + amount;
+    public double deposit(double amount) {
+        this.balance = this.balance + amount;
+        System.out.println("Deposit in the amount $ " + this.balance);
+        return this.balance;
+
     }
 
-    public void withdraw(double amount) {
-        balance = balance - amount;
+    public double withdraw(double amount) {
+        this.balance = this.balance - amount;
+        System.out.println("Withdraw in the amount $" + amount + "new balance $" + this.balance);
+        return this.balance;
     }
 
-    public double getBalance() {
-        return balance;
-    }
+
 }
 // else/if loop goes here?
 // all of the functions of my checking and savings go here?v

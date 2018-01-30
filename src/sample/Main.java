@@ -19,10 +19,16 @@ public class Main extends Application {
 
     public static void main(String[] args) {
 
-        BankAccount savings = new BankAccount();
+        SavingsAccnt savings = new SavingsAccnt(0);
         savings.deposit(500);
+        savings.withdraw(550);
 
-        BankAccount checking =
+        savings.compoundInterest();
+
+        CheckingAccnt checking = new CheckingAccnt(0);
+        checking.deposit(500);
+        checking.withdraw(550);
+
 
 
     }
